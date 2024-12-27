@@ -1,0 +1,42 @@
+footer{
+  background-color: #333333;
+  width: 100%;
+}
+
+.footer{
+  color: $main-font-color;
+  padding: 10px 0;
+  &-main{
+    @include flex(start, space-between);
+    &-column{
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+      &-image{
+        width: 100px;
+        border-radius: 50%;
+      }
+      &-title{
+        font-size: 34px;
+        &-adnl{
+          color: skyblue;
+        }
+      }
+    }
+    &-context{
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      &-box{
+        @include flex(center, space-between);
+      }
+    }
+  }
+  &-bottom{
+    border-top: 2px solid;
+    margin-top: 12px;
+    padding: 12px 0;
+    text-align: end;
+    font-size: 14px;
+  }
+}
